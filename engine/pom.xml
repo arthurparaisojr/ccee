@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>br.com.powercompany</groupId>
 	<artifactId>ccee</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<name>ccee</name>
 	<description> Câmara de Comercialização de Energia Elétrica</description>
 	<properties>
