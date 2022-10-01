@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface IService {
     public List<Leitura> getLeitura();
-    public void sendLeitura();
+    public boolean sendLeitura();
 }

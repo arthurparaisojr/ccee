@@ -15,10 +15,16 @@ public class Services implements IService {
         return result;
     }
     @Override
-    public void sendLeitura() {
-        sendLeituras();
+    public boolean sendLeitura() {
+        try {
+            sendLeituras();
+            return true;
+        }
+        catch (Exception e) {
+            return false;
+        }
     }
-    private void sendLeituras() {
+    private List<Leitura> sendLeituras() {
 
     }
 }
