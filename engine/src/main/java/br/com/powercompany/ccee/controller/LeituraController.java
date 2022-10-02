@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.text.ParseException;
 import java.util.List;
 
 
@@ -21,12 +22,8 @@ public class LeituraController {
     @Autowired
     private Services service;
 
-    @PostMapping("envio")
-    public boolean saveStudent() {
+    @GetMapping("leitura")
+    public List<Leitura> saveStudent() throws ParseException {
         return service.getLeitura();
     }
-
-    @GetMapping("students-list")
-    public List<Leitura> allstudents() {
-            }
 }

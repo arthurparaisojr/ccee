@@ -3,9 +3,10 @@ package br.com.powercompany.ccee.service;
 import br.com.powercompany.ccee.model.Leitura;
 import br.com.powercompany.ccee.model.Regiao;
 
+import java.text.ParseException;
 import java.util.List;
 
 public interface IService {
-    public List<Leitura> getLeitura();
+    public List<Leitura> getLeitura() throws ParseException;
     public boolean sendLeitura();
 }
